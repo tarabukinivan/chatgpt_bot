@@ -1,5 +1,5 @@
 build:
-	docker build -t boty .
+	docker build -t chatgpt  .
 
 run:
-	docker run -d -p 7777:7777 --name boty --rm boty
+	docker run -d --name chatgpt  chatgpt
