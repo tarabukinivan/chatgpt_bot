@@ -7,8 +7,6 @@ import { openai } from './openai.js'
 
 const MAX_MESSAGES = 1750;
 
-console.log(config.get('TEST_ENV'))
-
 const INITIAL_SESSION = {
     messages: [],
 }
