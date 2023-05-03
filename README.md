@@ -27,5 +27,5 @@ docker rm chatgpt
 docker rmi chatgpt
 
 удалить папку
-rm -rf chat_gpt
+rm -rf chatgpt_bot
 ```
