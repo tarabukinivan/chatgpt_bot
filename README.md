@@ -17,8 +17,6 @@ nano config/production.json
 docker build -t chatgpt  .
 docker run -d --name chatgpt  chatgpt
 ```
-
-
 удаление
 
 ```
