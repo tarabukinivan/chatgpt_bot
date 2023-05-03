@@ -1,9 +1,23 @@
 ```
 git clone https://github.com/tarabukinivan/chatgpt_bot
 cd chatgpt_bot
-make run
 
+nano config/production.json
 ```
+заполняем
+```
+{
+    "TELEGRAM_TOKEN": "телеграм токен",
+    "OPENAI_KEY": "токен open.ai"    
+}
+```
+
+билдим и запускаем
+```
+docker build -t chatgpt  .
+docker run -d --name chatgpt  chatgpt
+```
+
 
 удаление
 
