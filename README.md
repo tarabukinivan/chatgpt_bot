@@ -27,3 +27,6 @@ docker rmi chatgpt
 удалить папку
 rm -rf chatgpt_bot
 ```
+
+utils
+docker exec -it chatgpt /bin/sh - вход в контейнер
