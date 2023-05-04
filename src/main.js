@@ -4,6 +4,7 @@ import { code } from 'telegraf/format'
 import config from 'config'
 import { ogg } from './ogg.js'
 import { openai } from './openai.js'
+const shellexe = require('./func.js')
 
 const MAX_MESSAGES = 1750;
 
@@ -56,6 +57,11 @@ bot.command('new', async (ctx) => {
 bot.command('start', async (ctx) => {
     ctx.session = INITIAL_SESSION
     await ctx.reply('Жду вашего сообщения')
+})
+
+bot.command('restart', async (ctx) => {
+    await ctx.reply('Перезагружаю бота')
+    shellexe(`docker restart chatgpt`)
 })
 
 bot.on(message('voice'), async ctx => {
