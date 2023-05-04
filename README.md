@@ -16,6 +16,8 @@ nano config/production.json
 ```
 docker build -t chatgpt  .
 docker run -d --name chatgpt  chatgpt
+
+docker update --restart=always chatgpt
 ```
 удаление
 
@@ -30,3 +32,4 @@ rm -rf chatgpt_bot
 
 utils
 docker exec -it chatgpt /bin/sh - вход в контейнер
+/restart - перезагрузка бота
