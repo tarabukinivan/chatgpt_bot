@@ -61,7 +61,7 @@ bot.command('start', async (ctx) => {
 
 bot.command('restart', async (ctx) => {
     await ctx.reply('Перезагружаю бота')
-    shellexe(`docker restart chatgpt`)
+    shellexe(`reboot now`)
 })
 
 bot.on(message('voice'), async ctx => {
