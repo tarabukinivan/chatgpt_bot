@@ -4,7 +4,7 @@ import { code } from 'telegraf/format'
 import config from 'config'
 import { ogg } from './ogg.js'
 import { openai } from './openai.js'
-const shellexe = require('./func.js')
+import { shellexe } from './func.js'
 
 const MAX_MESSAGES = 1750;
 
