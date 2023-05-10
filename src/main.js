@@ -124,7 +124,7 @@ bot.on(message('text'), async ctx => {
             await ctx.reply(response.content)
         }else{
             console.log("получили undefined")
-            await ctx.reply("не получили ответ от сервера, поторите запрос")           
+            await ctx.reply("не получили ответ от сервера, сделайте /restart")           
         }
         console.log("lev4")
     } catch (e){
